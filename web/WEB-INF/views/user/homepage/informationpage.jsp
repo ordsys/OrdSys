@@ -53,7 +53,7 @@
 			<li class="mui-table-view-cell go-changePetname">
 
 				<a id="head" class="mui-navigate-right analyze_action" data-code="10056" description="修改昵称">昵称
-				<span id="customer_nickname" class="mui-pull-right color-9">捞粉儿</span>
+				<span id="customer_nickname" class="mui-pull-right color-9">饮水儿</span>
 
 
 			</a>

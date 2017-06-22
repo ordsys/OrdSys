@@ -101,7 +101,7 @@ require(['jquery', 'mui'], function($, mui) {
 				//返回到首页
 				$('body').on('tap', '.go-homepage', function() {
 					//window.location.href="../h5app/delicacy/HomePage.html";
-					gobackSourcePage('../');
+					gobackSourcePage('');
 				});
 				//去设置
 				$('body').on("tap", '.go-set', function() {
