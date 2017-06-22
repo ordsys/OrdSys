@@ -1,0 +1,7 @@
+
+
+登陆      http://localhost:8080/user/login
+注册      http://localhost:8080/user/register
+
+个人主页   http://localhost:8080/homepage/personal
+个人信息页 http://localhost:8080/homepage/information
