@@ -100,7 +100,7 @@
 			<div class="mui-inline">热门标签</div>
 			<ul class="label-wrapper2">
 				<li class="personalLabel2 analyze_action" data-code="10061" description="添加个性标签" data-id="" data-tagid="">
-				<span class="personaltext">火锅达人</span>
+				<span class="personaltext">购物达人</span>
 				</li>
 
 			</ul>

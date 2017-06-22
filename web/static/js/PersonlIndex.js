@@ -111,7 +111,7 @@ require(['jquery', 'mui'], function($, mui) {
 				//到修改资料
 				$('body').on("tap", '.go-personalinformation', function() {
 					maiDianStatistics($(this));
-					window.location.href = "/user/information";
+					window.location.href = "/homepage/information";
 				});
 				//到我的订单
 				$('.mui-table-view').on("tap", '.go-myorder', function() {

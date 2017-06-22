@@ -428,7 +428,7 @@ var imgtype='jpg';
 		function clipImg() {
 			if (!imgLoaded) {
 				alert("亲，当前没有图片可以裁剪!");
-				return(imgsource=img_section_url+'img/personal-mohead.png');
+				return(imgsource=img_section_url+'img/personal/personal-mohead.png');
 			}
 			var local = loaclToLoacl($moveLayer, $clipView);
 			var scale = myScroll.scale;

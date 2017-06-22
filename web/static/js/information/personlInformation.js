@@ -57,7 +57,7 @@ $(function() {
 			//log(dataURL);
 			$('#head').empty();
 			$('#head').append('<img src="' + imgsource + '" align="absmiddle" style="width:100%;">');
-			$('#head').append('<img id="s_dpage" src="'+img_section_url+'img/icon/camera.png" class="personl-camera">');
+			$('#head').append('<img id="s_dpage" src="'+img_section_url+'img/personal/information/camera.png" class="personl-camera">');
 			$('.htmleaf-container').hide();
 			$('#dpage').removeClass('show');
 			cutimgafter();
@@ -86,7 +86,7 @@ function operaterImg(uploadresult) {
 	if(uploadresult) {
 		$('#head').empty();
 		$('#head').append('<img src="' + imgsource + '" align="absmiddle" style="width:100%;">');
-		$('#head').append('<img id="s_dpage" src="'+img_section_url+'img/icon/camera.png" class="personl-camera">');
+		$('#head').append('<img id="s_dpage" src="'+img_section_url+'img/personal/information/camera.png" class="personl-camera">');
 		$('.htmleaf-container').hide();
 		$('#dpage').removeClass('show');
 	} else {
@@ -109,10 +109,10 @@ require.config({
 require(['jquery', 'mui'], function($, mui) {
 	//图片
 	var imgData ={
-		'headimg' : 'img/personal-mohead.png',
-		's_dpage' : 'img/icon/camera.png',
-		'customer_sexy_girl':'img/icon/dheckbox2.png',
-		'customer_sexy_boy' : 'img/icon/dheckbox2.png',
+		'headimg' : 'img/personal/personal-mohead.png',
+		's_dpage' : 'img/personal/information/camera.png',
+		'customer_sexy_girl':'img/personal/information/dheckbox2.png',
+		'customer_sexy_boy' :'img/personal/information/dheckbox2.png',
 		'img_close_icon' : 'img/icon/close.png'
 	}
 	//调用切片加载的方法
@@ -189,7 +189,7 @@ require(['jquery', 'mui'], function($, mui) {
 				});*/
 				// 返回
 				$('body').on('tap', '.go-perIndex', function() {
-					window.location.href = 'PersonlIndex.html';
+					window.location.href = '/homepage/personal';
 				});
 				// 昵称修改
 				$('body').on('tap', '.go-changePetname', function() {
@@ -209,7 +209,7 @@ require(['jquery', 'mui'], function($, mui) {
 					var tempSexy = '0';
 					// 判断是否改改变图片的路径(性别单选)
 					if(img_currentobj.attr('data-ischeck') == '0') {
-						img_currentobj.attr('src', img_section_url+'img/icon/dheckbox.png');
+						img_currentobj.attr('src', img_section_url+'img/personal/information/dheckbox.png');
 						img_currentobj.attr('data-ischeck', '1');
 						if(img_currentobj.attr('id') == 'customer_sexy_girl') {
 							tempSexy = '1';
@@ -289,11 +289,11 @@ require(['jquery', 'mui'], function($, mui) {
 		setSexyData:function(tag){//点击事件的性别设置
 			
 			if(tag){
-				$('#customer_sexy_boy').attr('src', img_section_url+'img/icon/dheckbox2.png');
+				$('#customer_sexy_boy').attr('src', img_section_url+'img/personal/information/dheckbox2.png');
 				$('#customer_sexy_boy').attr('data-ischeck', '0');
 				$('#customer_sexy').attr('data-sexy', '1');
 			}else{
-				$('#customer_sexy_girl').attr('src', img_section_url+'img/icon/dheckbox2.png');
+				$('#customer_sexy_girl').attr('src', img_section_url+'img/personal/information/dheckbox2.png');
 				$('#customer_sexy_girl').attr('data-ischeck', '0');
 				$('#customer_sexy').attr('data-sexy', '0');
 			}
@@ -342,9 +342,10 @@ require(['jquery', 'mui'], function($, mui) {
 						customer_json = storeUserInfo(customer,result.data);
 						opration.renderCustomerInfo(customer_json);
 					} else {
-						mui.alert('系统内部错误', '系统提示', function() {
+						/*mui.alert('系统内部错误', '系统提示', function() {
 							mui.back();
 						});
+						*/
 					}
 					closeLoadding();
 				}, null);
@@ -375,12 +376,12 @@ require(['jquery', 'mui'], function($, mui) {
 			$('#customer_nickname').text(data.nickName);
 			if(data.sex == '0' || data.sex == 0) { // 0 是男（sns是这样的）
 				$('#customer_sexy').attr('data-sexy', '1');
-				$('#customer_sexy_girl').attr('src', img_section_url+'img/icon/dheckbox2.png');
-				$('#customer_sexy_boy').attr('src', img_section_url+'img/icon/dheckbox.png');
+				$('#customer_sexy_girl').attr('src', img_section_url+'img/personal/information/dheckbox2.png');
+				$('#customer_sexy_boy').attr('src', img_section_url+'img/personal/information/dheckbox.png');
 			} else { // 1 是女
 				$('#customer_sexy').attr('data-sexy', '0');
-				$('#customer_sexy_girl').attr('src', img_section_url+'img/icon/dheckbox.png');
-				$('#customer_sexy_boy').attr('src', img_section_url+'img/icon/dheckbox2.png');
+				$('#customer_sexy_girl').attr('src', img_section_url+'img/personal/information/dheckbox.png');
+				$('#customer_sexy_boy').attr('src', img_section_url+'img/personal/information/dheckbox2.png');
 			}
 			//alert("返回密码类型"+data.pwd);
 			if(data.pwd == "0") {
