@@ -10,15 +10,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 
 @Controller
-@RequestMapping(value = "/integration", method = RequestMethod.GET)
+@RequestMapping(value = "/order", method = RequestMethod.GET)
 public class OrderController {
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public  String hello(ModelMap modelMap){
-        modelMap.addAttribute("name","lisi");
-        modelMap.addAttribute("msg","hello world");
-        return "user/own/user";
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public  String list(ModelMap modelMap){
+        modelMap.addAttribute("method","mall");
+        return "user/order/list";
+    }
 
+    @RequestMapping(value = "/detail", method = RequestMethod.GET)
+    public  String detail(ModelMap modelMap){
+        modelMap.addAttribute("method","mall");
+        return "";
     }
 
 }

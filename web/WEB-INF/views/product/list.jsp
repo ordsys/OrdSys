@@ -19,9 +19,6 @@
 			      <li><img src="${pageContext.request.contextPath}/static/img/mall/banner1.jpg"> </li>
 			  </ul> 
 		</div>
-		<a href="search.html" class="search">
-			开启你的美食之旅...
-		</a>
 		<ul class="nav">
 			<li>
 				<a href="search.html">

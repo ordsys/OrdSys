@@ -345,7 +345,7 @@ li{ list-style-type: none;}
 .order-style .current{ border-bottom: 2px solid #ff5500; background: transparent;}
 .cate-search{width: 100%; border-bottom: 1px solid #ddd; padding: 15px 5%; position:fixed; top: 49px; background: #fff; z-index: 10;}
 .cate-input{ width: 100%;  height: 3rem; border-radius: 15px; border: 1px solid #eee; padding-left: 2rem;}
-.cate-btn{ border: 0; background: url(../images/search.png) no-repeat; background-size: contain; width: 2rem; height: 2rem; position: absolute;
+.cate-btn{ border: 0; background: url(../img/mall/search.png) no-repeat; background-size: contain; width: 2rem; height: 2rem; position: absolute;
 right: 2.5rem; top:2rem;}
 .order-style li{ float: left; width: 20%; text-align: center;}
 .order-style li a{ color: #383838;}

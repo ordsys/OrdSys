@@ -24,6 +24,5 @@ public class HomePageController {
     public  String informationpage(ModelMap modelMap){
         modelMap.addAttribute("msg","information page");
         return "user/homepage/informationpage";
-
     }
 }

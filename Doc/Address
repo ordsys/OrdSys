@@ -6,5 +6,10 @@
 个人主页   http://localhost:8080/homepage/personal
 个人信息页 http://localhost:8080/homepage/information
 
-商城首页   http://localhost:8080/product/mall
+商城首页   http://localhost:8080/product/list
 商品详情页 http://localhost:8080/product/detail
+
+收货地址页 http://localhost:8080/address/list
+订单页    http://localhost:8080/order/list
+
+

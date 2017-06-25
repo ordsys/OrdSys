@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/product", method = RequestMethod.GET)
 public class ProductController {
 
-    @RequestMapping(value = "/mall", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public  String mall(ModelMap modelMap){
         modelMap.addAttribute("method","mall");
-        return "product/mall";
+        return "product/list";
     }
 
     @RequestMapping(value = "/detail", method = RequestMethod.GET)
