@@ -13,10 +13,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/product", method = RequestMethod.GET)
 public class ProductController {
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public  String hello(ModelMap modelMap){
-        modelMap.addAttribute("name","lisi");
-        modelMap.addAttribute("msg","hello world");
-        return "user/own/user";
+    @RequestMapping(value = "/mall", method = RequestMethod.GET)
+    public  String mall(ModelMap modelMap){
+        modelMap.addAttribute("method","mall");
+        return "product/mall";
+    }
+
+    @RequestMapping(value = "/detail", method = RequestMethod.GET)
+    public  String detail(ModelMap modelMap){
+        modelMap.addAttribute("method","mall");
+        return "product/detail";
     }
 }
